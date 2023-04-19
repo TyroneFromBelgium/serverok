@@ -1,0 +1,22 @@
+{
+    "hosts": [
+        {
+            "ip": "1.1.1.1",
+            "website": "www.google.be",
+            "beschikbaarheid": "Website is up and running",
+            "uitgevoerd_op": "2023-04-19 02:07:11"
+        },
+        {
+            "ip": "23.2.3.2",
+            "website": "www.test.be",
+            "beschikbaarheid": "Website is up and running",
+            "uitgevoerd_op": "2023-04-19 02:07:14"
+        },
+        {
+            "ip": "34.34.34.33",
+            "website": "www.dsjgfsdf.com",
+            "beschikbaarheid": "Website is down",
+            "uitgevoerd_op": "2023-04-19 02:07:14"
+        }
+    ]
+}

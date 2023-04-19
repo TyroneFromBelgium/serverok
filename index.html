@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Server Availability Report</title>
+  </head>
+  <body>
+    <h1>Server Availability Report</h1>
+    <table>
+      <tr>
+        <th>IP Address</th>
+        <th>Website URL</th>
+        <th>Availability</th>
+        <th>Last Checked</th>
+      </tr>
+      #for $server in $servers
+      <tr>
+        <td>$server['ip']</td>
+        <td>$server['website']</td>
+        <td>$server['beschikbaarheid']</td>
+        <td>$server['uitgevoerd_op']</td>
+      </tr>
+      #end for
+    </table>
+  </body>
+</html>
