@@ -1,7 +1,7 @@
 ### 3. Linode
 vars:
 - These are the variables that are being used inside the playbook.
-  -- Test
+    - lala
 ```yaml
 vars:
     api_token: "186f959d24f2011b4b762094fce1e32140eb80cd8e696227d00b63bd0daabc6d"
