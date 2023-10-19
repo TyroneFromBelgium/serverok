@@ -1,4 +1,26 @@
 ### 3. Linode
+vars:
+- These are the variables that are being used inside the playbook.
+  -- Test
+```yaml
+vars:
+    api_token: "186f959d24f2011b4b762094fce1e32140eb80cd8e696227d00b63bd0daabc6d"
+    region: eu-central
+    plan: g6-standard-2
+    image: linode/rocky9
+    authorized_keys_file: "/home/ael/.ssh/id_rsa.pub"
+    linode_instance_ids_file: "/home/ael/ansible/linode_instance_ids.txt"
+    firewall_instances:
+      db:
+        - name: "db1"
+        - name: "db2"
+      queue:
+        - name: "qu1"
+      controller:
+        - name: "cont1"
+```
+
+--------------------------------------------------------------
 
 - This "SSH_Configuration" role configures SSH to disable password-based authentication and enable pubkey authentication.
 
