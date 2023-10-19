@@ -1,7 +1,12 @@
 ### 3. Linode
-vars:
 - These are the variables that are being used inside the playbook.
-    - lala
+    - api_token = You can generate your own Linode API key on the Linode website.
+    - region = The region you want to host your VM's on.
+    - plan = You can view all the available plans on Linode website to find out which one is most suitable for your needs.
+    - image = Defining the image for the Linode instances.
+    - authorized_keys_file = Here, you provide the path to your SSH public key.
+    - linode_instance_ids_file = Ask Ali
+    - firewall_instances = This variable defines the configuration for the instances. You can specify the names of instances in each category.
 ```yaml
 vars:
     api_token: "186f959d24f2011b4b762094fce1e32140eb80cd8e696227d00b63bd0daabc6d"
