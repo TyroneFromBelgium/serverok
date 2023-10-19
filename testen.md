@@ -1,4 +1,5 @@
 ### 3. Linode
+#### Variables:
 - These are the variables that are being used inside the playbook.
     - api_token = You can generate your own Linode API key on the Linode website.
     - region = The region you want to host your VM's on.
