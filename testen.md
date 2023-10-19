@@ -22,7 +22,7 @@
     - Reload SSH
 ```
 
-- This task creates Linode instances based on the defined configuration in the firewall_instances variable. It loops through three categories: 'db', 'queue', and 'controller'.
+- This "CreateLinodeInstances" role creates Linode instances based on the defined configuration in the firewall_instances variable. It loops through three categories: 'DB', 'Queue', and 'Controller'.
 ```yaml
 - name: Create Linode Instances
   linode.cloud.instance:
@@ -42,8 +42,7 @@
   loop: "{{ firewall_instances['db'] + firewall_instances['queue'] + firewall_instances['controller'] }}"
   register: linode_instances
 ```
-
-- Collects information about the created Linode instances, including their process IDs and IP addresses.
+- This "LinodeInstanceInfo" role gathers information about the created Linode instances, including their process IDs and IP addresses
 ```yaml
 - name: Get Linode Instance Info
   linode.cloud.instance_info:
@@ -52,7 +51,7 @@
   loop: "{{ firewall_instances['db'] + firewall_instances['queue'] + firewall_instances['controller'] }}"
   register: linode_instance_info
 ```
-- This "DB_Firewall" role sets up firewall rules for the database VM.
+- This "DB_Firewall" role sets up firewall rules for the Database VM.
 ```yaml
 - name: Create Firewall DB
   linode.cloud.firewall:
@@ -104,7 +103,7 @@
     state: present
 register: firewall_db
 ```
-- This "DB_Controller" role sets up firewall rules for the controller VM.
+- This "DB_Controller" role sets up firewall rules for the Controller VM.
 ```yaml
 - name: Create Firewall Controller
   linode.cloud.firewall:
