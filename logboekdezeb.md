@@ -125,3 +125,17 @@ Voor week 3 heb ik de experimenten gemaakt dat werden gevraagd. Dit houdt in:
 - **Pcap Analyse**
   - Je analyseert één of meerdere hosts op de aanwezigheid van HTTP-verkeer (één of meerdere andere soorten verkeer mogen uiteraard ook: SMTP, POP3, IMAP)
 
+## Les 5: Python web hacking / Scapy / Cryptografie
+Voor week 5 heb ik gekozen om de oefeningen van cryptografie te doen.
+
+**Stap 1: Kennisverwerving**
+
+Ik begon met het verwerven van basiskennis over cryptografie, encryptie en decryptie. Dit omvatte het begrijpen van verschillende encryptie-algoritmen. Caesar versleuteling, kolomtranspositie versleuteling enz.
+
+**Stap 2: Eencryptie-oefeningen**
+
+Ik begon met eenvoudige oefeningen waarbij ik tekstberichten of bestanden versleutelde met verschillende encryptie-algoritmen. Dit hielp me om vertrouwd te raken met de encryptieprocessen. Ik had bijvoorbeeld nooit gehoord van kolomtranspositie versleuteling en dus bij deze ben ik dan geinformeerd.
+
+**Stap 3: Decryptie-oefeningen**
+
+Nu ging ik verder met het ontcijferen van versleutelde berichten of bestanden. Het was leuk bedacht om eerst een script te schrijven waarin je een boodschap moest encrypteren en kort later het weer moest gaan decrypteren met een script. 
