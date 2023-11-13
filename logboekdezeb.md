@@ -125,8 +125,9 @@ Voor week 3 heb ik de experimenten gemaakt dat werden gevraagd. Dit houdt in:
 - **Pcap Analyse**
   - Je analyseert één of meerdere hosts op de aanwezigheid van HTTP-verkeer (één of meerdere andere soorten verkeer mogen uiteraard ook: SMTP, POP3, IMAP)
 
-## Les 5: Python web hacking / Scapy / Cryptografie
-Voor week 5 heb ik gekozen om de oefeningen van cryptografie te doen.
+## Les 5: Python Web hacking / Scapy / Cryptografie
+
+Ik koos ervoor om cryptografische oefeningen te doen in plaats van web hacking oefeningen of werken met het Django-framework omdat ik een sterke interesse heb in de fundamenten van cybersecurity en informatiebeveiliging. Cryptografie vormt de basis van beveiligingsmaatregelen en helpt gegevens te beschermen tegen ongeautoriseerde toegang en manipulatie. Ik wilde een diepgaand begrip ontwikkelen van hoe versleutelingssystemen werken, hoe ze kunnen worden gebruikt om gegevens te beschermen en welke zwakke punten ze kunnen hebben.
 
 **Stap 1: Kennisverwerving**
 
@@ -139,3 +140,25 @@ Ik begon met eenvoudige oefeningen waarbij ik tekstberichten of bestanden versle
 **Stap 3: Decryptie-oefeningen**
 
 Nu ging ik verder met het ontcijferen van versleutelde berichten of bestanden. Het was leuk bedacht om eerst een script te schrijven waarin je een boodschap moest encrypteren en kort later het weer moest gaan decrypteren met een script. 
+
+## Les 7: Python: Wi-Fi reconnaissance
+
+**Ik koos ervoor om een WiFi scanner te schrijven met Scapy.**
+
+Uitleg script:
+
+Dit Python-script maakt gebruik van de Scapy-bibliotheek om Wi-Fi-pakketten te onderscheppen en informatie over draadloze toegangspunten (Access Points, APs) vast te leggen. Het script begint met het importeren van de nodige modules van Scapy, namelijk Dot11, sniff, en Dot11Elt.
+
+Vervolgens wordt een lege lijst genaamd AccessPointsList geïnitialiseerd. Deze lijst zal worden gebruikt om bij te houden welke APs zijn gedetecteerd tijdens het uitvoeren van het script.
+
+Het script definieert een functie genaamd HandleWiFiPackets(pkt) die wordt aangeroepen telkens wanneer een Wi-Fi-pakket wordt onderschept door sniff. Binnen deze functie wordt gecontroleerd of het onderschepte pakket een Wi-Fi-pakket is, wat wordt gedaan door te kijken of het een Dot11-laag heeft.
+
+Vervolgens controleert het script of het onderschepte pakket een probe request-pakket is (subtype 8) van een Wi-Fi-client naar een AP (type 0 en subtype 8). Als dit het geval is, gaat het verder met de verwerking.
+
+Het script kijkt dan of het MAC-adres van het AP (pkt.addr2) al in de lijst AccessPointsList staat. Als het MAC-adres nog niet in de lijst staat, wordt het toegevoegd aan de lijst.
+
+Verder haalt het script informatie op over het AP, zoals de SSID van het AP, de signaalsterkte (uitgedrukt in dBm), en het kanaal waarop het AP actief is.
+
+Ten slotte drukt het script de verzamelde informatie af in de console. Deze informatie omvat het MAC-adres van het AP, de SSID, de signaalsterkte en het kanaal waarop het AP zich bevindt.
+
+Het script maakt gebruik van de sniff-functie om pakketten te onderscheppen op de draadloze netwerkinterface "wlan0". Telkens wanneer er een pakket wordt onderschept, roept het de HandleWiFiPackets-functie aan om de relevante informatie vast te leggen en weer te geven. Hierdoor kan het script continu draaien en nieuwe pakketten blijven onderscheppen en verwerken terwijl het actief is. Dit is handig om een overzicht te krijgen van draadloze APs in de buurt en informatie over hun signaalsterkte en kanaal.
