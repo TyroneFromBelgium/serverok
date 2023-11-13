@@ -1,4 +1,4 @@
-**Les 1: Python en security - intro**
+## Les 1: Python en security - intro
 
 **Wat is ethical / white-hat hacking?**
 
@@ -109,3 +109,19 @@ Intigriti is een bedrijf dat een platform aanbiedt voor ethical hackers om deel 
 >**Wat doet deze script?**
 
 >>In essentie neemt dit script een screenshot van het huidige scherm, slaat deze op als "grabbed.png", en stuurt het vervolgens via FTP naar een specifieke server met de opgegeven inloggegevens (test, test).
+
+## Les 3: Python - werken met Socket en Scapy
+Voor week 3 heb ik de experimenten gemaakt dat werden gevraagd. Dit houdt in:
+
+- **Host Discovery**
+  - Gegeven een bepaalde IP-range het netwerk doorzoeken naar beschikbare hosts (bijv via ARP)
+
+- **Service Discovery**
+  - Gegeven het IP-adres van één of meerdere hosts (bijv als resultaat van de hierboven beschreven sweep) voer je een poort scan uit (voor alle poorten onder 1024)
+
+- **Remote OS Detectie**
+  - Je voert een actieve fingerprinting uit op één of meerdere hosts (bijv als resultaat van de hierboven beschreven sweep) en detecteert op basis hiervan het OS van de host
+
+- **Pcap Analyse**
+  - Je analyseert één of meerdere hosts op de aanwezigheid van HTTP-verkeer (één of meerdere andere soorten verkeer mogen uiteraard ook: SMTP, POP3, IMAP)
+
