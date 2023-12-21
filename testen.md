@@ -149,7 +149,7 @@ roles:
     state: present
 register: firewall_db
 ```
-- This "DB_Controller" role sets up firewall rules for the Controller VM.
+- This "Controller_Firewall" role sets up firewall rules for the Controller VM.
 ```yaml
 - name: Create Firewall Controller
   linode.cloud.firewall:
