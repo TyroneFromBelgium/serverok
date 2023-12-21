@@ -14,7 +14,6 @@ vars:
     plan: g6-standard-2
     image: linode/rocky9
     authorized_keys_file: "/home/ael/.ssh/id_rsa.pub"
-    linode_instance_ids_file: "/home/ael/ansible/linode_instance_ids.txt"
     firewall_instances:
       db:
         - name: "db1"
