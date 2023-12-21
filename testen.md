@@ -247,3 +247,51 @@ register: firewall_queue
     state: present
   loop: "{{ firewall_instances['controller'] }}"
 ```
+- This "HostFileRole" role generates an inventory file named "hosts" using a Jinja2 template ("inventory_template.ini.j2") and then displays the results.
+```yaml
+- name: Attach instance to Controller Firewall
+  linode.cloud.firewall_device:
+    api_token: "{{ api_token }}"
+    firewall_id: "{{ firewall_cntrl.firewall.id }}"
+    entity_id: "{{ linode_instances.results | selectattr('item.name', 'eq', item.name) | map(attribute='instance.id') | list | first }}"
+    entity_type: "linode"
+    state: present
+  loop: "{{ firewall_instances['controller'] }}"
+```
+- This Ansible inventory file template organizes Linode instances into groups (controller, db, queue, dnsmaster, dnsslave) based on their labels, associating each instance's label and public IPv4 address with the respective group.
+```jinja
+[controller]
+{% for instance in linode_instance_info.results %}
+{% if 'cont' in instance.instance.label %}
+{{ instance.instance.label }} ansible_host= {{ instance.networking.ipv4.public[0].address}}
+{% endif %}
+{% endfor %}
+
+[db]
+{% for instance in linode_instances.results %}
+{% if 'db' in instance.instance.label %}
+{{ instance.instance.label }} ansible_host= {{ instance.networking.ipv4.public[0].address}}
+{% endif %}
+{% endfor %}
+
+[queue]
+{% for instance in linode_instances.results %}
+{% if 'qu' in instance.instance.label %}
+{{ instance.instance.label }} ansible_host= {{ instance.networking.ipv4.public[0].address}}
+{% endif %}
+{% endfor %}
+
+[dnsmaster]
+{% for instance in linode_instances.results %}
+{% if 'dnsmaster' in instance.instance.label %}
+{{ instance.instance.label }} ansible_host= {{ instance.networking.ipv4.public[0].address}}
+{% endif %}
+{% endfor %}
+
+[dnsslave]
+{% for instance in linode_instances.results %}
+{% if 'dnsslave' in instance.instance.label %}
+{{ instance.instance.label }} ansible_host= {{ instance.networking.ipv4.public[0].address}}
+{% endif %}
+{% endfor %}
+```
