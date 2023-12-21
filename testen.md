@@ -1,5 +1,5 @@
 ### 3. Linode
-#### 3.1 Variables:
+#### 3.1 Main playbook & Variables:
 - These are the variables that are being used inside the playbook.
     - api_token = You can generate your own Linode API key on the Linode website.
     - region = The region you want to host your VM's on.
@@ -24,12 +24,32 @@ vars:
         - name: "qu1"
       controller:
         - name: "cont1"
+roles:
+    - name: SSH_Configuration
+      role: roles/SSH_Configuration
+    - name: CreateLinodeInstances
+      role: roles/CreateLinodeInstances
+    - name: LinodeInstanceInfo
+      role: roles/LinodeInstanceInfo
+    - name: HostFileRole
+      role: roles/HostFileRole
+    - name: DatabaseFirewall
+      role: roles/DatabaseFirewall
+    - name: ControllerFirewall
+      role: roles/ControllerFirewall
+    - name: QueueFirewall
+      role: roles/QueueFirewall
+    - name: Attach_DatabaseFirewall
+      role: roles/Attach_DatabaseFirewall
+    - name: Attach_ControllerFirewall
+      role: roles/Attach_ControllerFirewall
+    - name: Attach_QueueFirewall
+      role: roles/Attach_QueueFirewall
 ```
 
 --------------------------------------------------------------
-
-- This "SSH_Configuration" role configures SSH to disable password-based authentication and enable pubkey authentication.
-
+#### 3.2 Tasks/Roles:
+- This "SSH_Configuration" role configures SSH to disable password-based authentication and enable pubkey authentication.x²
 ```yaml
 - name: Disable password-based authentication in SSH
   lineinfile:
