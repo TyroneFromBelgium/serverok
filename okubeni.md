@@ -53,4 +53,4 @@ Wanneer je 1 van de 2 onderste commando's intypt in de terminal, krijg je 8 moge
 
 Het proces van het ontwikkelen van mijn Pentesting Toolkit was een uitdagende en stressvolle reis. Het vinden van de juiste scans, het implementeren ervan enz... Maar in dit proces heb ik veel bijgeleerd en gegroeid, zowel op technisch vlak als op persoonlijk gebied.
 
-Het belangrijkste wat ik heb geleerd, is doorzettingsvermogen en het vermogen om problemen te overwinnen. Het was niet altijd eenvoudig om de juiste informatie te vinden of om de scans correct te laten werken, maar ik heb mn best gedaan. Toch vind ik het jammer dat ik de CVE script niet perfect heb laten kunnen werken zoals ik dat had gewenst.
+Het belangrijkste wat ik heb geleerd, is doorzettingsvermogen en het vermogen om problemen te overwinnen. Het was niet altijd eenvoudig om de juiste informatie te vinden of om de scans correct te laten werken, maar ik heb mn best gedaan. Toch vind ik het jammer dat ik de CVE script niet perfect heb laten kunnen werken zoals ik dat had gewenst, maar ik ben blij met wat ik heb en ik hoop dat u ook blij bent.
