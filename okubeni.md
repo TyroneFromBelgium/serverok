@@ -1,4 +1,4 @@
-## Les 1: Python en security - intro
+## Eindopdracht Python: Pentesting Toolkit
 
 **portscanner.py**
 
