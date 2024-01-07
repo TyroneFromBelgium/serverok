@@ -1,3 +1,7 @@
+## Usage
+- python main.py --hostname www.example.be
+- python main.py --ip 192.168.0.0
+
 ## Eindopdracht Python: Pentesting Toolkit
 
 **portscanner.py**
