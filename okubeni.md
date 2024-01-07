@@ -39,4 +39,5 @@
 
 - Beschrijving: Wordt gebruikt voor het scannen van systemen of applicaties op bekende kwetsbaarheden, met referentie naar de CVE-database.
 - Belang: Een essentiële tool voor kwetsbaarheidsbeoordeling en -beheer, waardoor pentesters bekende beveiligingszwakheden in doelsystemen kunnen identificeren.
+
   - Wat ik eigenlijk wilde bereiken: Ik wilde oorspronkelijk een script maken dat eerst een opgegeven domein scant op alle technologieën en daaruit de versies haalt. Vervolgens wilde ik deze versies opzoeken in een CVE-database met behulp van een API, maar helaas zat ik erg lang vast, dus heb ik gewoon mijn voortgang in het script gelaten.
