@@ -1,4 +1,6 @@
 ## Usage
+Wanneer je 1 van de 2 onderste commando's intypt in de terminal, krijg je 8 mogelijke scans waaruit je kan kiezen. Geef de nummer in van de scan die je wilt doen en je zal direct de output krijgen.
+
 - python main.py --hostname www.example.be
 - python main.py --ip 192.168.0.0
 
