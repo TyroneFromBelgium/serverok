@@ -1,10 +1,11 @@
+# Eindopdracht Python: Pentesting Toolkit
 ## Usage
 Wanneer je 1 van de 2 onderste commando's intypt in de terminal, krijg je 8 mogelijke scans waaruit je kan kiezen. Geef de nummer in van de scan die je wilt doen en je zal direct de output krijgen.
 
 - python main.py --hostname www.example.be
 - python main.py --ip 192.168.0.0
 
-## Eindopdracht Python: Pentesting Toolkit
+## Scans
 
 **portscanner.py**
 
@@ -47,3 +48,9 @@ Wanneer je 1 van de 2 onderste commando's intypt in de terminal, krijg je 8 moge
 - Belang: Een essentiële tool voor kwetsbaarheidsbeoordeling en -beheer, waardoor pentesters bekende beveiligingszwakheden in doelsystemen kunnen identificeren.
 
   - Wat ik eigenlijk wilde bereiken: Ik wilde oorspronkelijk een script maken dat eerst een opgegeven domein scant op alle technologieën en daaruit de versies haalt. Vervolgens wilde ik deze versies opzoeken in een CVE-database met behulp van een API, maar helaas zat ik erg lang vast, dus heb ik gewoon mijn voortgang in het script gelaten.
+
+## Zelf reflectie
+
+Het proces van het ontwikkelen van mijn Pentesting Toolkit was een uitdagende en stressvolle reis. Het vinden van de juiste scans, het implementeren ervan enz... Maar in dit proces heb ik veel bijgeleerd en gegroeid, zowel op technisch vlak als op persoonlijk gebied.
+
+Het belangrijkste wat ik heb geleerd, is doorzettingsvermogen en het vermogen om problemen te overwinnen. Het was niet altijd eenvoudig om de juiste informatie te vinden of om de scans correct te laten werken, maar ik heb mn best gedaan. Toch vind ik het jammer dat ik de CVE script niet perfect heb laten kunnen werken zoals ik dat had gewenst.
