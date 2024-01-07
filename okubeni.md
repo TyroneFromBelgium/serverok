@@ -39,3 +39,4 @@
 
 - Beschrijving: Wordt gebruikt voor het scannen van systemen of applicaties op bekende kwetsbaarheden, met referentie naar de CVE-database.
 - Belang: Een essentiële tool voor kwetsbaarheidsbeoordeling en -beheer, waardoor pentesters bekende beveiligingszwakheden in doelsystemen kunnen identificeren.
+  - Kek
